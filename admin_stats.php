@@ -2,7 +2,7 @@
 $conn = new mysqli("localhost", "root", "", "url_db");
 
 // IP yang diizinkan
-$allowed_ips = ['127.0.0.1', '::1', '192.168.1.6'];
+$allowed_ips = ['127.0.0.1', '::1', '192.168.1.6']; // ganti dengan ip kalian
 $client_ip = $_SERVER['REMOTE_ADDR'];
 if (!in_array($client_ip, $allowed_ips)) {
     http_response_code(403);
@@ -21,7 +21,7 @@ if (isset($_POST['reset'])) {
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Panel - Statistik</title>
+  <title>Admin Panel - Statistics</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -79,7 +79,7 @@ if (isset($_POST['reset'])) {
 </head>
 <body>
 
-  <h2>📊 Admin Statistik Panel</h2>
+  <h2>📊 Admin Statistics Panel</h2>
   <div class="ip-info">IP: <?= $client_ip ?></div>
 
   <div class="section">
