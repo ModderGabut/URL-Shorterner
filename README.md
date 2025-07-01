@@ -1,2 +1,4 @@
 # URL-Shorterner
-php server
+## INFORMATION
+url shorterner with xampp
+# TUTORIALS
